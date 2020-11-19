@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean class="com.SpringCore.LIstIocInject.Model" name="model1">
+ <property name="name" value="Aamir"></property>
+ <property name="phonesnumber">
+	<list>
+	<value>737918171</value>
+	<value>8989712345</value>
+	<value>374636488</value>
+	</list>
+</property>
+<property name="address">
+	<set>
+	<value>azamgarh</value>
+	<value>delhi</value>
+	<value>kanpoor</value>
+	</set>
+</property>
+<property name="course">
+	<map>
+	<entry key="java" value="2month"></entry>
+	<entry key="python" value="1.2 month"></entry>
+	</map>
+</property>	
+ </bean>
+ </beans>
